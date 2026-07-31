@@ -1,0 +1,22 @@
+{
+  "name": "ecomm-beauty-app",
+  "private": true,
+  "workspaces": [
+    "shared",
+    "backend",
+    "admin",
+    "mobile"
+  ],
+  "overrides": {
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-native": "0.81.5"
+  },
+  "scripts": {
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:admin": "npm run dev --workspace=admin",
+    "dev:mobile": "npm run start --workspace=mobile",
+    "build:backend": "npm run build --workspace=backend",
+    "build:admin": "npm run build --workspace=admin"
+  }
+}

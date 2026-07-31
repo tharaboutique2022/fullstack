@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: ecomm-beauty-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: ecomm_beauty_dev
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/data
+
+volumes:
+  postgres_data:

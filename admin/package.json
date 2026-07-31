@@ -1,0 +1,27 @@
+{
+  "name": "ecomm-beauty-admin",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run build:shared && tsc --noEmit && vite build",
+    "build:shared": "npm run build --workspace=@ecomm/shared",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ecomm/shared": "*",
+    "@tanstack/react-query": "^5.90.11",
+    "@tanstack/react-query-devtools": "^5.91.1",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-router-dom": "^7.9.6"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.4"
+  }
+}

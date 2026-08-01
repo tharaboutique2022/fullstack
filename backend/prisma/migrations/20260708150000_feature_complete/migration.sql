@@ -8,6 +8,7 @@ ALTER TYPE "PaymentStatus" ADD VALUE IF NOT EXISTS 'refunded' AFTER 'failed';
 CREATE TYPE "CouponDiscountType" AS ENUM ('percent', 'fixed');
 CREATE TYPE "NotificationType" AS ENUM ('order', 'booking', 'payment', 'general');
 CREATE TYPE "ReviewTargetType" AS ENUM ('product', 'service');
+CREATE TYPE "PaymentMethod" AS ENUM ('cod', 'online');
 
 -- Order columns
 ALTER TABLE "orders" ADD COLUMN IF NOT EXISTS "coupon_code" TEXT;

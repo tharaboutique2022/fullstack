@@ -20,6 +20,13 @@
     "@ecomm/shared": "*",
     "@prisma/client": "^5.22.0",
     "prisma": "^5.22.0",
+    "@types/bcrypt": "^6.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^24.10.1",
+    "@types/nodemailer": "^8.0.1",
+    "typescript": "^5.9.3",
     "bcrypt": "^6.0.0",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
@@ -30,16 +37,11 @@
     "nodemailer": "^9.0.3",
     "razorpay": "^2.9.6",
     "zod": "^4.4.3"
+    
+
   },
   "devDependencies": {
-    "@types/bcrypt": "^6.0.0",
-    "@types/cors": "^2.8.19",
-    "@types/express": "^5.0.6",
-    "@types/jsonwebtoken": "^9.0.10",
-    "@types/node": "^24.10.1",
-    "@types/nodemailer": "^8.0.1",
-    "tsx": "^4.21.0",
-    "typescript": "^5.9.3"
+    "tsx": "^4.21.0"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"

@@ -28,8 +28,9 @@
     },
     "extra": {
       "eas": {
-        "projectId": "thara-boutique-ecomm"
+        "projectId": "35946a2b-517b-4fe1-a4ee-b01c5502db58"
       }
-    }
+    },
+    "owner": "vinothrdevs-team"
   }
 }
